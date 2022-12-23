@@ -30,7 +30,7 @@ let IsTriangle = () => {
       <h1 className="heading">Is<span>Triangle</span></h1>
       <input className="input-angle"
         type="text"
-        placeholder="angle1,angle2,angle3"
+        placeholder="Format: angle1,angle2,angle3"
         onChange={(e) => setAngles(e.target.value)}
       />
       <button className="btn-istriangle" onClick={checkTriangle}>Submit</button>
