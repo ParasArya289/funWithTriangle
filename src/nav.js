@@ -1,21 +1,22 @@
 import { Outlet, Link } from "react-router-dom";
-
+import './nav.css';
 const Layout = () => {
   return (
     <>
       <nav>
+          <div className="nav-name"><strong>FunWithTriangle</strong></div>
         <ul>
           <li>
-            <Link to="/">IsTriangle</Link>
+            <Link className="link" to="/">IsTriangle</Link>
           </li>
           <li>
-            <Link to="/quiz">Quiz</Link>
+            <Link className="link" to="/quiz">Quiz</Link>
           </li>
           <li>
-            <Link to="/hypotneuse">Hypotaneuse</Link>
+            <Link className="link" to="/hypotneuse">Hypotaneuse</Link>
           </li>
           <li>
-            <Link to="/area">Area</Link>
+            <Link className="link" to="/area">Area</Link>
           </li>
         </ul>
       </nav>
