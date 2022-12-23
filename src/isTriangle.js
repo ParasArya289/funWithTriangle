@@ -11,12 +11,17 @@ let IsTriangle = () => {
   };
 
   let checkTriangle = () => {
-    let sumOfAn = sumOfAngles(angle1, angle2, angle3);
+    let sumOfAn = sumOfAngles(+angle1, +angle2, +angle3);
     console.log(sumOfAn);
-    if (sumOfAn === 180) {
-      setCheck("Yes it is a triangle");
-    } else {
-      setCheck(`No, it is not a triangle because sum of angle is ${sumOfAn}`);
+    if(angle1,angle2,angle3 && angle1,angle2,angle3 > 0){
+        if (sumOfAn === 180) {
+          setCheck(`Yes it is a triangle, sum of angle is ${sumOfAn}`);
+        } else {
+          setCheck(`No, it is not a triangle because sum of angle is ${sumOfAn}`);
+        }
+    }
+    else{
+        alert("Please follow format (angle1,angle2,angle3) dont forget commas and provide positive angles")
     }
   };
 
