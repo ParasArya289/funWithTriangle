@@ -1,9 +1,10 @@
 import './App.css';
+import IsTriangle from './isTriangle';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
+      <IsTriangle/>
     </div>
   );
 }
