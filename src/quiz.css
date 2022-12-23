@@ -21,11 +21,14 @@
   width: 50%;
   display: block;
   margin: 1rem auto;
-  background-color: rgba(176, 176, 176, 0.544);
+  background-color: rgba(120, 120, 120, 0.544);
   padding: 16px;
   border-radius: 6px;
   font-size: 20px;
   text-align: center;
+}
+.li-quiz:hover{
+  background-color: rgba(186, 186, 186, 0.544);
 }
 
 .question-text {
@@ -55,4 +58,7 @@ button {
   font-size: 16px;
   font-weight: bold;
   border-radius: 6px;
+}
+button:hover{
+    background-color: rgb(251, 74, 43);
 }

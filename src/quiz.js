@@ -2,21 +2,30 @@ import { useState } from "react";
 import "./quiz.css";
 let questions = [
   {
-    text: "What is the capital of America?",
+    text: "How many sides does a triangle have?",
     options: [
-      { id: 0, text: "New York City", isCorrect: false },
-      { id: 1, text: "Boston", isCorrect: false },
-      { id: 2, text: "Santa Fe", isCorrect: false },
-      { id: 3, text: "Washington DC", isCorrect: true },
+      { id: 0, text: "2", isCorrect: false },
+      { id: 1, text: "3", isCorrect: true },
+      { id: 2, text: "4", isCorrect: false },
+      { id: 3, text: "0", isCorrect: false },
     ],
   },
   {
-    text: "What year was the Constitution of America written?",
+    text: "Which ancient Greek philosopher studied triangles?",
     options: [
-      { id: 0, text: "1787", isCorrect: true },
-      { id: 1, text: "1776", isCorrect: false },
-      { id: 2, text: "1774", isCorrect: false },
-      { id: 3, text: "1826", isCorrect: false },
+      { id: 0, text: "Plato", isCorrect: false },
+      { id: 1, text: "Socrates", isCorrect: false },
+      { id: 2, text: "Aristotle", isCorrect: false },
+      { id: 3, text: "Pythogoras", isCorrect: true },
+    ],
+  },
+  {
+    text: "What is a hypotenuse? ",
+    options: [
+      { id: 0, text: "A triangle with four sides", isCorrect: false },
+      { id: 1, text: "The total length of a triangle", isCorrect: false },
+      { id: 2, text: "A triangle with 3 right angles", isCorrect: false },
+      { id: 3, text: "The longest side of a triangle", isCorrect: true },
     ],
   },
 ];
