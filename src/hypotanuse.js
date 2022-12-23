@@ -20,7 +20,7 @@ let Hyptoneuse = () => {
   };
 
   return (
-    <div>
+    <div className="container-istriangle">
       <h1 className="heading">
         Hypotanuse of<span> Triangle</span>
       </h1>

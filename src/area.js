@@ -20,7 +20,7 @@ let Area = () => {
     }
   };
   return (
-    <div>
+    <div className="container-istriangle">
       <h1 className="heading">
         Area of <span>Triangle</span>
       </h1>
