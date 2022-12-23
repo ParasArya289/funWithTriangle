@@ -4,6 +4,7 @@ import "./isTriangle.css";
 let IsTriangle = () => {
   let [angles, setAngles] = useState("");
   let [check, setCheck] = useState("");
+  let [formula, setFormula] = useState("Angle1 + Angle2 + Angle3 = 180°");
 
   let [angle1, angle2, angle3] = angles.split(",");
 
@@ -15,6 +16,7 @@ let IsTriangle = () => {
     let sumOfAn = sumOfAngles(+angle1, +angle2, +angle3);
 
     if ((angle1, angle2, angle3 && angle1, angle2, angle3 > 0)) {
+      setFormula(`${angle1} + ${angle2} + ${angle3} = ${sumOfAn}°`);
       if (sumOfAn === 180) {
         setCheck(`Yes it is a triangle, sum of angle is ${sumOfAn}`);
       } else {
@@ -32,7 +34,7 @@ let IsTriangle = () => {
       <h1 className="heading">
         Is<span>Triangle</span>
       </h1>
-      <h3 className="heading">Angle1 + Angle2 + Angle3 = 180°</h3>
+      <h3 className="heading">{formula}</h3>
       <input
         className="input-angle"
         type="text"
