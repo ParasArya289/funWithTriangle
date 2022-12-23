@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './quiz.css';
+import "./quiz.css";
 let questions = [
   {
     text: "What is the capital of America?",
@@ -7,8 +7,8 @@ let questions = [
       { id: 0, text: "New York City", isCorrect: false },
       { id: 1, text: "Boston", isCorrect: false },
       { id: 2, text: "Santa Fe", isCorrect: false },
-      { id: 3, text: "Washington DC", isCorrect: true }
-    ]
+      { id: 3, text: "Washington DC", isCorrect: true },
+    ],
   },
   {
     text: "What year was the Constitution of America written?",
@@ -16,9 +16,9 @@ let questions = [
       { id: 0, text: "1787", isCorrect: true },
       { id: 1, text: "1776", isCorrect: false },
       { id: 2, text: "1774", isCorrect: false },
-      { id: 3, text: "1826", isCorrect: false }
-    ]
-  }
+      { id: 3, text: "1826", isCorrect: false },
+    ],
+  },
 ];
 
 let Quiz = () => {
@@ -36,24 +36,20 @@ let Quiz = () => {
       setShowResults(true);
     }
   };
-  
-  let restartGame = () =>{
+
+  let restartGame = () => {
     setScore(0);
     setShowResults(false);
     setCurrentQuestion(0);
-  }
+  };
 
   return (
     <div>
-      {/* 1. Header  */}
-      <h1 className="heading"><span>Triangle</span> Quiz</h1>
-
-      {/* 2. Current Score  */}
+      <h1 className="heading">
+        <span>Triangle</span> Quiz
+      </h1>
       <h2 className="heading">Score: {score}</h2>
-
-      {/* 3. Show results or show the question game  */}
       {showResults ? (
-        /* 4. Final Results */
         <div className="final-results">
           <h1>Final Results</h1>
           <h2>
@@ -63,19 +59,16 @@ let Quiz = () => {
           <button onClick={() => restartGame()}>Restart game</button>
         </div>
       ) : (
-        /* 5. Question Card  */
         <div className="question-card">
-          {/* Current Question  */}
           <h2>
             Question: {currentQuestion + 1} out of {questions.length}
           </h2>
           <h3 className="question-text">{questions[currentQuestion].text}</h3>
-
-          {/* List of possible answers  */}
           <ul className="ul-quiz">
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li className="li-quiz"
+                <li
+                  className="li-quiz"
                   key={option.id}
                   onClick={() => optionClicked(option.isCorrect)}
                 >

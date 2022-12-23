@@ -6,7 +6,9 @@ const Layout = () => {
       <nav>
         <div className="container">
           <div className="nav-name">
-        <p><strong>FunWithTriangle</strong></p>
+            <p>
+              <strong>FunWithTriangle</strong>
+            </p>
           </div>
           <ul>
             <li>

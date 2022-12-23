@@ -2,7 +2,8 @@ import { useState } from "react";
 
 let Area = () => {
   let [inp, setInp] = useState("");
-  let [area, setArea] = useState();
+  let [area, setArea] = useState("");
+
   let [base, height] = inp.split(",");
 
   let calculateArea = () => {

@@ -1,21 +1,21 @@
-.heading{
-    color:grey;    
+.heading {
+  color: grey;
 }
-span{
-    color:tomato;
+span {
+  color: tomato;
 }
-.input-angle{
-    width: 15rem;
-    height: 2rem;
-    border: 2px solid tomato;
-    border-radius: 6px;
+.input-angle {
+  width: 15rem;
+  height: 2rem;
+  border: 2px solid tomato;
+  border-radius: 6px;
 }
-.btn-istriangle{
-    background-color:tomato;
-    color: white;
-    border:none;
-    display: block;
-    margin:1rem auto;
-    border-radius: 6px;
-    padding:0.6rem 2rem;
+.btn-istriangle {
+  background-color: tomato;
+  color: white;
+  border: none;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
 }
