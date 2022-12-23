@@ -7,7 +7,7 @@ const Layout = () => {
         <div className="container">
           <div className="nav-name">
             <p>
-              <strong>FunWithTriangle</strong>
+              <strong> ▲ FunWithTriangle</strong>
             </p>
           </div>
           <ul>

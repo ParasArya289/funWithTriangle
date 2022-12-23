@@ -1,6 +1,8 @@
 .nav-name {
   color: white;
   text-align: left;
+  padding:0rem 1rem;
+  
 }
 
 nav {
@@ -21,6 +23,10 @@ li {
   text-decoration: none;
 }
 .link {
+  font-weight: 600;
   color: white;
   text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline solid 0.2rem;
 }
