@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './isTriangle.css';
 
 let IsTriangle = () => {
   let [angles, setAngles] = useState("");
@@ -20,15 +21,15 @@ let IsTriangle = () => {
   };
 
   return (
-    <div>
-      <h1>isTriangle</h1>
-      <input
+    <div className="container-istriangle">
+      <h1 className="heading">Is<span>Triangle</span></h1>
+      <input className="input-angle"
         type="text"
         placeholder="angle1,angle2,angle3"
         onChange={(e) => setAngles(e.target.value)}
       />
-      <button onClick={checkTriangle}>Submit</button>
-      <h2>{check}</h2>
+      <button className="btn-istriangle" onClick={checkTriangle}>Submit</button>
+      <h2 className="heading">{check}</h2>
     </div>
   );
 };

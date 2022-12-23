@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './quiz.css';
 let questions = [
   {
     text: "What is the capital of America?",
@@ -46,10 +46,10 @@ let Quiz = () => {
   return (
     <div>
       {/* 1. Header  */}
-      <h1>Triangle Quiz</h1>
+      <h1 className="heading"><span>Triangle</span> Quiz</h1>
 
       {/* 2. Current Score  */}
-      <h2>Score: {score}</h2>
+      <h2 className="heading">Score: {score}</h2>
 
       {/* 3. Show results or show the question game  */}
       {showResults ? (
@@ -72,10 +72,10 @@ let Quiz = () => {
           <h3 className="question-text">{questions[currentQuestion].text}</h3>
 
           {/* List of possible answers  */}
-          <ul>
+          <ul className="ul-quiz">
             {questions[currentQuestion].options.map((option) => {
               return (
-                <li
+                <li className="li-quiz"
                   key={option.id}
                   onClick={() => optionClicked(option.isCorrect)}
                 >
