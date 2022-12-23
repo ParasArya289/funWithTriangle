@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<IsTriangle />} />
             <Route path="quiz" element={<Quiz />} />
-            <Route path="hypotneuse" element={<Hyptoneuse />} />
+            <Route path="hypotnuse" element={<Hyptoneuse />} />
             <Route path="area" element={<Area />} />
           </Route>
         </Routes>

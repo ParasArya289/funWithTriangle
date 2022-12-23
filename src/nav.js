@@ -20,8 +20,8 @@ const Layout = () => {
               </Link>
             </li>
             <li>
-              <Link className="link" to="/hypotneuse">
-                Hypotaneuse
+              <Link className="link" to="/hypotnuse">
+                Hypotanuse
               </Link>
             </li>
             <li>
