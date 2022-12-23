@@ -19,7 +19,6 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    <h1>***Under Development****</h1>
     </div>
   );
 }

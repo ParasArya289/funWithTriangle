@@ -13,11 +13,11 @@ let Area = () =>{
     }
     return(
         <div>
-            <h1>Area of Triangle</h1>
-            <h3>1/2xbasexheight</h3>
-            <input type="text" onChange={e=>setInp(e.target.value)} placeholder="Format: Base,Height" />
-            <button onClick={calculateArea}>Check</button>
-            <h2>Area formed by {base} and {height} is {area} cm2</h2>
+            <h1 className="heading">Area of <span>Triangle</span></h1>
+            <h3 className="heading">1/2 x Base x Height</h3>
+            <input className="input-angle" type="text" onChange={e=>setInp(e.target.value)} placeholder="Format: Base,Height" />
+            <button className="btn-istriangle" onClick={calculateArea}>Check</button>
+            <h2 className="heading">Area formed by {base} and {height} is {area} cm2</h2>
         </div>
     )
 }
