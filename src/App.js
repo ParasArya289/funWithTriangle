@@ -1,4 +1,5 @@
 import './App.css';
+import Area from './area';
 import Hyptoneuse from './hypotanuse';
 import IsTriangle from './isTriangle';
 import Quiz from './quiz';
@@ -8,7 +9,8 @@ function App() {
     <div className="App">
       {/* <IsTriangle/> */}
       {/* <Quiz/> */}
-      <Hyptoneuse/>
+      {/* <Hyptoneuse/> */}
+      <Area/>
     </div>
   );
 }
